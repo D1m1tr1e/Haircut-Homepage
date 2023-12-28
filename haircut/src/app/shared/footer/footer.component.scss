@@ -1,0 +1,17 @@
+section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 5rem;
+    background-color:rgb(44,44,44);
+    >div{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

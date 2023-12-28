@@ -1,0 +1,25 @@
+section {
+    margin: 0;
+
+    >div {
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+.el1{
+    position:relative
+}
+
+.el2{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 1rem
+}
+
+p{
+    color: white;
+    padding: 1rem;
+}

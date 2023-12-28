@@ -1,0 +1,44 @@
+section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+img {
+    height: 30rem;
+    object-fit: contain;
+}
+
+.description-1 {
+    background-color: rgb(44,44,44);
+}
+
+.descrption-2{
+    width: 90%;
+    padding-bottom: 0 !important;
+}
