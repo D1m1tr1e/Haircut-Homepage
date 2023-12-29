@@ -4,6 +4,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 
     >div {
         display: flex;
@@ -19,7 +20,7 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -30,15 +31,37 @@ p {
 }
 
 img {
-    height: 30rem;
-    object-fit: contain;
+    height: 25rem;
+    object-fit: contain; 
 }
 
-.description-1 {
-    background-color: rgb(44,44,44);
+.description-1,
+.description-3 {
+    background-color: rgb(44, 44, 44);
 }
 
-.descrption-2{
-    width: 90%;
-    padding-bottom: 0 !important;
+.description-2 {
+    width: 100vw;
+    align-items: center;
+}
+
+.description-3 {
+    width: 100vw;
+
+    >div {
+        display: flex;
+        justify-content: space-around;
+
+        >div {
+            text-align: center;
+
+            >img {
+                border: 1px solid rgb(176, 118, 25);
+                border-radius: 1rem;
+                padding: 1rem;
+                margin: 0.5rem 0 0.5rem 0;
+                height: 7rem;
+            }
+        }
+    }
 }
