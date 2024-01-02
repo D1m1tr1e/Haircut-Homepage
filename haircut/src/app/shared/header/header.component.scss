@@ -19,9 +19,15 @@ section {
     right: 1rem
 }
 
-p {
+a {
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem 0.3rem 1rem;
+    text-decoration: none;
+
+    &:hover {
+        color: gray;
+        border-bottom: 2px solid gray;
+    }
 }
 
 .menu-btn {
@@ -30,6 +36,7 @@ p {
     margin-top: 0.5rem;
     position: absolute;
     right: 1rem;
+    z-index: 999;
 }
 
 .bar1,
@@ -58,11 +65,40 @@ p {
     display: none;
 }
 
-@media only screen and (max-width: 810px) {
-    .el2{
-        display:none;
+#mobilMenu {
+   height: 100dvh;
+    background-color: red;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    background-image: url('./../../../assets/img/bg-menu.png');
+    background-size:cover;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        font-size: 1.5rem;
+        >a{
+            &:hover{
+                color: black;
+                border-bottom: none;
+            }
+        }
     }
-    .menu-btn{
+}
+
+@media only screen and (max-width: 810px) {
+    .el2 {
+        display: none;
+    }
+
+    .menu-btn {
         display: inline-block;
+    }
+
+    #mobilMenu {
+        display: flex;
     }
 }
