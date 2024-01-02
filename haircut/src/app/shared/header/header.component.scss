@@ -1,6 +1,5 @@
 section {
     margin: 0;
-
     >div {
         >img {
             width: 100%;
@@ -62,30 +61,42 @@ a {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
-#mobilMenu {
-   height: 100dvh;
+.mobile-menu {
+    height: 100dvh;
     background-color: red;
     position: absolute;
-    display: none;
+    display: flex;
     top: 0;
     right: 0;
     background-image: url('./../../../assets/img/bg-menu.png');
-    background-size:cover;
+    background-size: cover;
+    animation: slideAnimationIn 0.8s ease-in-out;
 
-    >div{
+    >div {
         display: flex;
         flex-direction: column;
         padding: 2rem;
         font-size: 1.5rem;
-        >a{
-            &:hover{
-                color: black;
+
+        >a {
+            &:hover {
+                color: rgb(216, 211, 211);
                 border-bottom: none;
             }
         }
+    }
+}
+
+@keyframes slideAnimationIn {
+    from {
+        transform: translate(100%);
+    }
+
+    to {
+        transform: translate(0%);
     }
 }
 
@@ -96,9 +107,5 @@ a {
 
     .menu-btn {
         display: inline-block;
-    }
-
-    #mobilMenu {
-        display: flex;
     }
 }

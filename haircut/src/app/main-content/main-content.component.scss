@@ -4,7 +4,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: hidden;
 
     >div {
         display: flex;
