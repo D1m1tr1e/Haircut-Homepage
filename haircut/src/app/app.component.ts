@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { ImprintComponent } from './imprint/imprint.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { AgbComponent } from './agb/agb.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, MainContentComponent, FooterComponent ],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, MainContentComponent,
+    FooterComponent, ImprintComponent, ContactComponent, AgbComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
