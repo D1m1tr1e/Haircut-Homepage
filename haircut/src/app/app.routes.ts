@@ -8,5 +8,6 @@ export const routes: Routes = [
     { path: '', component: MainContentComponent },
     { path: 'imprint', component: ImprintComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'location', component: ContactComponent },
     { path: 'agb', component: AgbComponent }
 ];

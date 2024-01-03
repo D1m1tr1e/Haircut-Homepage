@@ -1,0 +1,60 @@
+section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.description-3 {
+    background-color: rgb(44, 44, 44);
+}
+
+.description-3 {
+    width: 100vw;
+
+    >div {
+        display: flex;
+        justify-content: space-around;
+
+        >div {
+            text-align: center;
+
+            >img {
+                border: 1px solid rgb(176, 118, 25);
+                border-radius: 1rem;
+                padding: 1rem;
+                margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+                height: 7rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
