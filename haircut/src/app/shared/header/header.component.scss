@@ -1,3 +1,7 @@
+$flex: flex;
+$gray-color: gray;
+$white-color: white;
+
 section {
     margin: 0;
     >div {
@@ -13,19 +17,19 @@ section {
 
 .el2 {
     position: absolute;
-    display: flex;
+    display: $flex;
     top: 0;
     right: 1rem
 }
 
 a {
-    color: white;
+    color: $white-color;
     padding: 1rem 1rem 0.3rem 1rem;
     text-decoration: none;
 
     &:hover {
-        color: gray;
-        border-bottom: 2px solid gray;
+        color: $gray-color;
+        border-bottom: 2px solid $gray-color;
     }
 }
 
@@ -67,7 +71,7 @@ a {
 .mobile-menu {
     height: 100dvh;
     position: absolute;
-    display: flex;
+    display: $flex;
     top: 0;
     right: 0;
     background-image: url('/assets/img/bg-menu.png');
@@ -75,7 +79,7 @@ a {
     animation: slideAnimationIn 0.8s ease-in-out;
 
     >div {
-        display: flex;
+        display: $flex;
         flex-direction: column;
         padding: 2rem;
         font-size: 1.5rem;
